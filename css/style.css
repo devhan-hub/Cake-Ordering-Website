@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+:root {
+    --list-clr:hwb(187 7% 7%);
+}
+
+* , *::after, *::before {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    display: grid;
+    
+}
+
+p {
+    font-size: 0.9em;
+}
+
+img {
+   width: 100%;
+}
+
+ nav {
+    margin: 0px 20px;
+ }
+
+.navbar-list {
+    
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-transform: capitalize;
+   margin: 0;
+   padding: 15px 15px 25px 15px;
+   border-bottom: 1px solid rgb(193, 192, 192);
+   list-style: none;
+   margin-bottom: 15px;
+   
+
+
+   i {
+    display:none ;
+   }
+
+   a {
+       text-decoration: none;
+       color:var(--list-clr);
+       letter-spacing: -1.25px;
+       font-family: cursive;
+       font-style: italic;
+   }
+
+   a:hover {
+       cursor: pointer;
+       color: hwb(187 1% 39%);
+   }
+
+   a:active {
+
+    color: hwb(187 52% 4%);
+   }
+}
+
+
+ .logo {
+
+    width: 80%;
+    margin: 0 10%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+h3 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background-color: rgb(17, 13, 13);
+        color: white;
+        border-radius: 50%;
+        line-height: 0.5em;
+        padding:60px;
+        font-family: "Cookie", cursive;
+        font-size:2.9em;
+        font-weight: 50;
+        font-style: oblique;    
+       
+}
+
+ }
+
+ .taste {
+
+    text-align:start;
+   padding: 30px;
+   margin: 0 15px;
+     
+   i {
+       font-size: 2.8em;
+       margin-right: 5px;
+      
+   }
+
+   h1 {
+     
+    font-size: 2.7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+
+   }
+
+   p {
+       font-family:cursive;
+       font-style: oblique;
+       font-weight: 1;
+   }
+ }
+
+
+ .main {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding: 30px;
+
+   
+    figcaption {
+        color: var(--list-clr);
+        font-family:cursive;
+    }
+
+    p {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: 800;
+         font-style: italic; 
+         width: 95%; 
+         text-align: start;  
+    }
+    
+    
+ }
+
+ .box-1 , .box-2{
+    padding: 10px;
+    border: solid 1px #c3c0c0;
+
+    img {
+        height: 300px;
+        object-fit: cover;
+    }
+  
+ }
+
+
+ .contributer {
+     display: flex;
+     flex-direction: column;
+     max-width: 80%;
+     margin: auto;
+     margin-bottom: 20px;
+     text-align: center;
+    
+
+   q {
+
+    text-transform: lowercase;
+
+   }
+     span {
+
+        color: var(--list-clr);
+
+     }
+     
+     .join {
+        margin-top: 30px;
+        border: 1px solid #958e8e;
+        padding: 8px 16px;
+        font-family: "Cookie";
+        font-size: 1.4em;
+        border-radius: 6px;
+
+        a {
+        text-decoration: none;
+        color: var(--list-clr);
+
+        i {
+            margin-right: 5px;
+            font-size: 20px;
+        }
+
+        }
+
+        a:hover {
+            color: rgb(44, 185, 185);
+            
+        }
+
+        
+     }
+
+ }
+
+
+ .about {
+    text-align: center;
+
+    p {
+    font-family:"Cookie";
+    font-size:1.4em ;
+    
+    }
+ }
+
+@media (min-width:600px)  {
+    
+    .logo {
+       
+        order: 1;
+        
+    }
+    nav {
+        display: grid;
+        margin: 0 30px;
+        justify-content: space-between;
+        grid-template-columns: 1fr 2.6fr;
+
+        .navbar-list {
+            border: none;
+            order: 2;
+
+        }
+    }
+}
+
+@media (min-width:800px) {
+
+    body {
+        padding:0 30px;
+    }
+
+    .taste {
+        padding-top: 0;
+        width: 70%;
+        padding-bottom:15px ;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        border-top: #c2bfbf 0.5px solid;
+        gap: 25px;
+
+
+       
+    }
+
+   
+
+    .navbar-list li a  i {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        color: initial;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        
+       
+        grid-template-columns: 1fr 1.2fr;
+        margin-bottom: 0;
+        
+    }
+    .logo {
+        margin-left: -20px;
+       
+    }
+
+    .taste {
+        margin-top: 0;
+    }
+
+
+    .contributer {
+        width: 100%;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+
+    }
+}
+
+@media (min-width:1000px)  {
+
+    .logo {
+        margin-left: auto;
+    }
+
+
+
+    body {
+        display: grid;
+        grid-template-areas:
+           "n t t"
+           "n m m"
+           "c m m"
+           "a m m"; 
+           grid-template-columns: 1.3fr 2fr 2fr;
+           grid-template-rows: 1.4fr 1fr 1fr 1fr;
+           padding: 30px 30px 0 30px;
+           margin-bottom: 0;
+           
+    }
+
+    nav {
+        grid-area: n;
+        
+       
+    
+    }
+
+    .main {
+        grid-area: m;
+        align-self: self-end;
+    }
+
+    .taste {
+        grid-area: t;
+        align-self: self-end;
+        font-weight: 100;
+    }
+
+    footer {
+        grid-area: f;
+    }
+
+    .contributer {
+        grid-area: c;
+    }
+
+    .about {
+        grid-area: a;
+    }
+
+    .navbar-list li a i {
+        padding: 0;
+        display: inline-block;
+        margin-right: 10px;
+
+        
+    }
+ 
+   
+
+    .navbar-list {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap:15px;
+        }
+
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .contributer {
+        
+        padding: 0 15px;
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        h4 {
+            text-align: star;
+        }
+    }
+
+    .contributer .join {
+        
+        padding:5px 15px;
+        font-size: 16px;
+        text-align: start;
+
+
+       a i {
+            font-size: 15px;
+        }
+    }
+
+    .about {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h4 { 
+            margin-bottom: 18px;
+        }
+        P {
+             text-align: start;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+    }
+
+    nav ,.contributer {
+        padding-right:0 ;
+    }
+}
+
+
+
